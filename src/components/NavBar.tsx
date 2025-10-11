@@ -21,7 +21,8 @@ export default function NavBar() {
     // return the body
     return(
         <>
-            <div className="lg:hidden flex justify-start items-center gap-4 min-w-[100%] h-20 p-[1rem] fixed top-0 left-0">
+            {/** On Mobile */}
+            <div className="lg:hidden flex justify-start items-center gap-4 min-w-[100%] h-20 p-[1rem] fixed top-0 left-0 bg-[#383f49]">
                 {
                     !showNavbar ? (
                         <>
@@ -47,7 +48,7 @@ export default function NavBar() {
             <div>   
                 {
                     showNavbar && (     
-                        <div className="lg:hidden flex flex-col items-center gap-5 md:gap-7 px-4 py-5 min-h-[100vh] min-w-[100%] mt-0 fixed top-20 left-0 backdrop-blur">
+                        <div className="lg:hidden flex flex-col items-center gap-5 md:gap-7 px-4 py-5 min-h-[100vh] min-w-[100%] mt-0 fixed top-20 left-0 bg-[#2b3038]">
                             <ul className="flex justify-center items-center gap-4">
                                 <li>
                                     <a target="_blank" href="https://www.linkedin.com/in/giuliamoukouyou/" rel="noopener noreferrer">                          
@@ -64,7 +65,7 @@ export default function NavBar() {
                                     return(
                                         <li key={item.name}>
                                             <button
-                                                className="flex items-center justify-center gap-2 text-lg text-white font-thin hover:underline cursor-pointer"
+                                                className="flex items-center justify-center gap-2 text-lg text-white font-normal hover:underline cursor-pointer"
                                                 onClick={() => {item.onClick?.();
                                                 setShownavbar(false);
                                                 }}>
@@ -79,14 +80,15 @@ export default function NavBar() {
                     )
                 }
             </div>
-            <div className="hidden lg:px-16 xl:px-64 lg:flex justify-center items-center gap-4 min-w-[100%] h-20 p-[1rem] fixed top-0 left-0">
+            {/** On Desktop */}
+            <div className="hidden lg:px-16 xl:px-64 lg:flex justify-center items-center gap-4 min-w-[100%] h-20 p-[1rem] fixed top-0 left-0 bg-[#2b3038]">
                <ul className="flex gap-10">
                     {NavBarData.map((item)=> {
                         const Icon = item.icon;
                         return(
                             <li key={item.name}>
                                 <button
-                                    className="flex items-center justify-center gap-2 text-lg text-white font-thin hover:underline cursor-pointer"                                    onClick={() => {item.onClick?.();
+                                    className="flex items-center justify-center gap-2 text-lg text-white hover:underline cursor-pointer font-thin"                                    onClick={() => {item.onClick?.();
                                     setShownavbar(false);
                                     }}>
                                 <Icon/>
