@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 interface PaginationProps {
   postsPerPage: number;
@@ -23,6 +23,14 @@ export const Pagination: React.FC<PaginationProps> = ({
     e.preventDefault();
     setCurrentPage(pageNumber);
     };
+
+    // Scroll smoothly to the top of the page when opening new page
+    useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [currentPage]);
 
   return (
     <div className="flex items-center justify-center">
