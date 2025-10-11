@@ -21,8 +21,8 @@ export default function NavBar() {
     // return the body
     return(
         <>
-            {/** On Mobile */}
-            <div className="lg:hidden flex justify-start items-center gap-4 min-w-[100%] h-20 p-[1rem] fixed top-0 left-0 bg-[#383f49]">
+             {/** On Mobile */}
+            <div className="lg:hidden flex justify-start items-center gap-4 min-w-[100%] h-20 p-[1rem] fixed top-0 left-0 bg-[#1f232c] border-b-[1px] border-b-[#2b3038]">
                 {
                     !showNavbar ? (
                         <>
@@ -81,14 +81,15 @@ export default function NavBar() {
                 }
             </div>
             {/** On Desktop */}
-            <div className="hidden lg:px-16 xl:px-64 lg:flex justify-center items-center gap-4 min-w-[100%] h-20 p-[1rem] fixed top-0 left-0 bg-[#2b3038]">
+            <div className="hidden lg:px-16 xl:px-64 lg:flex justify-center items-center gap-4 min-w-[100%] h-20 p-[1rem] fixed top-0 left-0 bg-[#1f232c] border-b-[1px] border-b-[#2b3038]">
                <ul className="flex gap-10">
                     {NavBarData.map((item)=> {
                         const Icon = item.icon;
                         return(
                             <li key={item.name}>
                                 <button
-                                    className="flex items-center justify-center gap-2 text-lg text-white hover:underline cursor-pointer font-thin"                                    onClick={() => {item.onClick?.();
+                                    className="flex items-center justify-center gap-2 text-lg text-white hover:underline cursor-pointer"                                    
+                                    onClick={() => {item.onClick?.();
                                     setShownavbar(false);
                                     }}>
                                 <Icon/>
