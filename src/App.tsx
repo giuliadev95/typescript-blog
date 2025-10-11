@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BlogPage } from './pages/BlogPage';
 import { HomePage } from './pages/HomePage';
-import SingleBlogPost from './components/dynamic/SingleBlogPost';
+import {SingleBlogPost} from './components/dynamic/SingleBlogPost';
 
 function App() {
 

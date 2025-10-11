@@ -2,7 +2,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import type {BlogPost} from "../types/BlogPost.ts";
 import { Link } from "react-router-dom";
 
-interface BlogPostProps{
+export interface BlogPostProps{
     post: BlogPost;
 }
 

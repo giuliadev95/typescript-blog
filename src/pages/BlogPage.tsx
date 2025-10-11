@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
-import BlogPostData from "../data/PlogPostData.ts";
+import BlogPostData from "../data/BlogPostData.ts";
 import type { BlogPost } from "../types/BlogPost.ts";
 import { PostCard } from "../components/PostCard";
 import { Pagination } from "../components/Pagination";
