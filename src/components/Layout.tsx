@@ -1,5 +1,6 @@
 import React from "react";
 import type {ReactNode} from "react";
+import NavBar from "./NavBar";
 
 type LayoutProps = {
     children: ReactNode;
@@ -7,9 +8,13 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({children}) => {
     return (
-        <div className="flex flex-col items-center justify-center">
-            {children}
-        </div>
+        <>
+            {/** NavBar component */}
+            <NavBar/>
+            <div className="flex flex-col items-center justify-center mt-20">
+                {children}
+            </div>
+        </>
     )
 }
 

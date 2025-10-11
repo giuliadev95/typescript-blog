@@ -1,4 +1,5 @@
-import type { ImageData } from "./ImageData";
+import type { Image } from "./Image";
+import type { Category } from "./Category";
 
 export interface BlogPost {
     id: number;
@@ -6,7 +7,7 @@ export interface BlogPost {
     firstLines: string;
     body: string;
     createdAt:Date;
-    category: string;
-    img: ImageData[];
+    category:Category;
+    img: Image[];
 }
 
