@@ -1,4 +1,6 @@
+import { FaAngleRight } from "react-icons/fa6";
 import type {BlogPost} from "../types/BlogPost.ts";
+import { Link } from "react-router-dom";
 
 interface BlogPostProps{
     post: BlogPost;
@@ -36,6 +38,12 @@ export const PostCard=({post} : BlogPostProps )=>{
                     <p className="font-sans text-[#a1a1aa] text-md text-start">
                         {post.firstLines} {"..."}
                     </p>
+                    <Link to={`/post/${post.id}`}
+                        className="flex gap-2 items-center justify-start bg-[#f53b57] text-white font-semibold py-2 px-4 rounded-4xl"
+                    >
+                        Leggi 
+                        <FaAngleRight/>
+                    </Link>
                 </article>
             </div>
         </div>
