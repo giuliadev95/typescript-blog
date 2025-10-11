@@ -88,7 +88,7 @@ export default function NavBar() {
                         return(
                             <li key={item.name}>
                                 <button
-                                    className="flex items-center justify-center gap-2 text-lg text-white hover:underline cursor-pointer"                                    
+                                    className="flex items-center justify-center gap-2 text-lg text-white font-thin  hover:underline cursor-pointer"                                    
                                     onClick={() => {item.onClick?.();
                                     setShownavbar(false);
                                     }}>
