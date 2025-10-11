@@ -23,9 +23,19 @@ export const BlogPage: React.FC = () => {
           Blog
         </h1>
 
+        <div className="mb-4">
+          {/* Pagination component */}
+          <Pagination
+            postsPerPage={postsPerPage}
+            totalPosts={BlogPostData.length}
+            setCurrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
+        </div>
+
         {/* Post card */}
         {currentPosts.map((post: BlogPost) => (
-          <PostCard key={post.id} post={post} />
+          <PostCard key={post.id} post={post}/>
         ))}
 
         {/* Pagination component */}
