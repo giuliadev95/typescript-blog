@@ -19,7 +19,7 @@ export const PostCard=({post} : BlogPostProps )=>{
     return(
         <div className="lg:flex lg:flex-col lg:items-center">
             <div className="flex flex-col w-[100%] lg:w-[50%]">       
-                <article className="p-2 h-fit border-[1px] border-[#1f232c] mb-[4rem] flex flex-col items-start">        
+                <article className="p-2 h-fit border-[1px] border-[#1f232c] mb-[4rem] flex flex-col items-start gap-4">        
                     <img 
                         src={(post.img[0].imgUrl)}
                         style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", borderRadius:"2%"}}
