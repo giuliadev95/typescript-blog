@@ -9,27 +9,29 @@ export const NavBarData: NavItem[] = [
         name: "Home",
         icon: FaHome ,
         onClick:()=> {
-            const section = document.querySelector("#about");
-            section?.scrollIntoView({ behavior: "smooth" });
+            window.location.href = "/";
         }
     },
     { 
         name: "About", 
         icon: FaUser, 
-        onClick: () => { window.location.href = "/about"; 
+        onClick: () => { 
+            window.location.href = "/about"; 
         } 
     },
     { 
         name: "Blog",
         icon: FaPen,
-        onClick: () => { window.location.href = "/blog";
+        onClick: () => { 
+            window.location.href = "/blog";
         } 
     },
     { 
         name: "Contatti", 
         icon: RiContactsBook3Fill, 
         onClick: () => { 
-            const section = document.querySelector("#contact"); section?.scrollIntoView({ behavior: "smooth" }); 
+            const section = document.querySelector("#contact"); 
+            section?.scrollIntoView({ behavior: "smooth" }); 
     } 
     },
 ]

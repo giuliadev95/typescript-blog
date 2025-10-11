@@ -1,7 +1,7 @@
 import { PostCard } from "../components/PostCard";
 import BlogPostData from "../data/PlogPostData.ts";
-import Layout from "../components/Layout";
 import type { BlogPost } from "../types/BlogPost.ts";
+import Layout from "../components/Layout";
 
 export const BlogPage: React.FC = () => {
   return (
