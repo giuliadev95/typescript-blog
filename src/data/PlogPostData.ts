@@ -74,7 +74,59 @@ const BlogPostData : BlogPost[] = [
             }],
         createdAt: new Date('09/10/2025'),
          category: categories[3]
-    }
+    },
+    {
+        id: 5,
+        title: "Titolo0",
+        firstLines:"Noi siamo le prime righe",
+        body:"I'm the body, not very long, uh?",
+        img:[
+            {
+                imgUrl:"/about-img.png",
+                imgAlt:"A teacher giving an online class"
+            }],
+        createdAt: new Date('09/10/2025'),
+         category: categories[3]
+    },
+    {
+        id: 6,
+        title: "Titolo0",
+        firstLines:"Noi siamo le prime righe",
+        body:"I'm the body, not very long, uh?",
+        img:[
+            {
+                imgUrl:"/about-img.png",
+                imgAlt:"A teacher giving an online class"
+            }],
+        createdAt: new Date('09/10/2025'),
+         category: categories[3]
+    },
+    {
+        id: 7,
+        title: "Titolo0",
+        firstLines:"Noi siamo le prime righe",
+        body:"I'm the body, not very long, uh?",
+        img:[
+            {
+                imgUrl:"/about-img.png",
+                imgAlt:"A teacher giving an online class"
+            }],
+        createdAt: new Date('09/10/2025'),
+         category: categories[3]
+    },
+    {
+        id: 8,
+        title: "Titolo0",
+        firstLines:"Noi siamo le prime righe",
+        body:"I'm the body, not very long, uh?",
+        img:[
+            {
+                imgUrl:"/about-img.png",
+                imgAlt:"A teacher giving an online class"
+            }],
+        createdAt: new Date('09/10/2025'),
+         category: categories[3]
+    },
 ]
 
 export default BlogPostData;
