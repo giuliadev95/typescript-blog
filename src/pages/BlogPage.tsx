@@ -18,26 +18,11 @@ export const BlogPage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="">
-        <h1 className="text-[#97d4c7] text-5xl font-bold mb-6">
-          Blog
-        </h1>
+      <h1 className="text-[#97d4c7] text-5xl font-bold mb-6">
+        Blog
+      </h1>
 
-        <div className="mb-4">
-          {/* Pagination component */}
-          <Pagination
-            postsPerPage={postsPerPage}
-            totalPosts={BlogPostData.length}
-            setCurrentPage={setCurrentPage}
-            currentPage={currentPage}
-          />
-        </div>
-
-        {/* Post card */}
-        {currentPosts.map((post: BlogPost) => (
-          <PostCard key={post.id} post={post}/>
-        ))}
-
+      <div className="mb-4">
         {/* Pagination component */}
         <Pagination
           postsPerPage={postsPerPage}
@@ -46,6 +31,19 @@ export const BlogPage: React.FC = () => {
           currentPage={currentPage}
         />
       </div>
+
+      {/* Post card */}
+      {currentPosts.map((post: BlogPost) => (
+        <PostCard key={post.id} post={post}/>
+      ))}
+
+      {/* Pagination component */}
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={BlogPostData.length}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      />
     </Layout>
   );
 };

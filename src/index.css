@@ -1,5 +1,11 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
 
 body {
     background-color: #1f232c;
+}
+
+.markdown > * {
+  all: revert;
 }

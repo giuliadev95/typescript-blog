@@ -55,9 +55,11 @@ export const SingleBlogPost = () => {
               {formattedDate}
             </time>
           </div>
-          <p className="font-sans text-[#a1a1aa] text-md text-start">{post.body}</p>
+          <p className="font-sans text-[#a1a1aa] text-md text-start markdown prose">
+            <post.body/>
+          </p>
           <Link
-            to={`/`}
+            to={`/blog`}
             className="flex gap-2 items-center justify-start bg-[#f53b57] text-white font-semibold py-2 px-4 rounded-4xl"
           >
             Torna ai post
