@@ -32,6 +32,6 @@ export const NavBarData: NavItem[] = [
         onClick: () => { 
             const section = document.querySelector("#contact"); 
             section?.scrollIntoView({ behavior: "smooth" }); 
-    } 
+        } 
     },
 ]

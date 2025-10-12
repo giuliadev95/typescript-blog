@@ -14,7 +14,47 @@ const BlogPostData : BlogPost[] = [
             quella prima lezione è molto più di un incontro: è l’inizio 
             di un percorso di fiducia, empatia e scoperta reciproca.
         `,
-        body:"I'm the body, not very long, uh?",
+        body:`
+            La prima lezione con uno studente nuovo può sembrare intimidatoria, soprattutto quando avviene online. Ma niente panico: con un po’ di preparazione puoi trasformarla in un’esperienza positiva sia per te che per lo studente.
+
+            1. Preparati prima di tutto
+
+            Rivedi i materiali o l’argomento che affronterete.
+
+            Prepara una scaletta semplice della lezione, così avrai sempre un filo logico da seguire.
+
+            Controlla microfono, webcam e connessione: niente di peggio di problemi tecnici all’inizio!
+
+            2. Rompi il ghiaccio
+
+            Dedica qualche minuto a conoscere lo studente: interessi, motivazioni, eventuali difficoltà precedenti.
+
+            Fai domande aperte, ascolta e mostra entusiasmo.
+
+            3. Chiarezza e struttura
+
+            Spiega subito l’obiettivo della lezione.
+
+            Alterna spiegazioni e esercizi pratici: così mantieni alta l’attenzione.
+
+            Usa esempi concreti e pertinenti alla vita o agli interessi dello studente.
+
+            4. Mantieni un tono positivo
+
+            Non correggere in maniera brusca: valorizza prima ciò che lo studente fa bene.
+
+            Incoraggia domande e dubbi, anche piccoli.
+
+            5. Concludi con una piccola sintesi
+
+            Riassumi ciò che avete fatto insieme.
+
+            Dai uno o due compiti semplici da fare per la prossima lezione, così lo studente sente progressi tangibili.
+
+            Consiglio extra:
+            Non cercare di fare troppo nella prima lezione. L’obiettivo principale è creare fiducia e capire le esigenze dello studente. Una buona partenza è metà del successo!
+                
+        `,
         img:[
             {
                 imgUrl:"/man-gives-lesson.jpg",

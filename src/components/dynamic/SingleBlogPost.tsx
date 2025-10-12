@@ -1,4 +1,6 @@
+'use client';
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react"; 
 import type { BlogPost } from "../../types/BlogPost.ts";
 import BlogPostData from "../../data/BlogPostData.ts";
 
@@ -17,6 +19,15 @@ export const SingleBlogPost = () => {
     month: "2-digit",
     year: "numeric",
   }).replaceAll("/", "-");
+
+  // Scroll smoothly to the top of the page when opening new page
+      useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, []);
+  
 
   return (
     <div className="lg:flex lg:flex-col lg:items-center">
